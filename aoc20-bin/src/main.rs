@@ -1,3 +1,5 @@
+use aoc20_lib;
+
 fn main() {
-    println!("Hello, world!");
+    aoc20_lib::hello_world()
 }
