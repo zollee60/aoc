@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+    "aoc20-bin",
+    "aoc20-lib"
+]
