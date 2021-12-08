@@ -1,12 +1,10 @@
 [package]
-name = "aoc20-bin"
+name = "aoc21-bin"
 version = "0.1.0"
 edition = "2018"
+default-run = "aoc21-bin"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-aoc20-lib = { path = "../aoc20-lib" }
-
-[env]
-RUST_BACKTRACE = 1
+aoc21-lib = { path = "../aoc21-lib" }

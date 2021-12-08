@@ -2,5 +2,10 @@
 
 members = [
     "aoc20-bin",
-    "aoc20-lib"
+    "aoc20-lib",
+    "aoc21-bin",
+    "aoc21-lib",
 ]
+
+[env]
+RUST_BACKTRACE = 1
