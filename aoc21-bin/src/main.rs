@@ -37,4 +37,9 @@ fn main() {
     let life_support_rating = aoc21_lib::day3::calc_life_support_rating(&mut diagnostics);
 
     println!("Day 3: Life support rating = {}", life_support_rating);
+
+    let mut bingo = aoc21_lib::day4::read_bingo("./target/debug/day4.txt");
+
+    let final_score = aoc21_lib::day4::find_winner(&mut bingo);
+    println!("Day 4: Final score = {} ", final_score)
 }

@@ -47,9 +47,9 @@ pub fn calc_life_support_rating(diagnostics: &mut Vec<String>) -> u32 {
     let mut co2_clone = diagnostics.to_owned();
     println!("Length of 1 number: {}", diagnostics[0].chars().count());
     while i < diagnostics[0].chars().count() && oxygen_clone.len() > 1 {
-        println!("Value of I: {}", i);
-        println!("Length of Oxygen: {}", oxygen_clone.len());
-        println!("Length of CO2: {}", co2_clone.len());
+        //println!("Value of I: {}", i);
+        //println!("Length of Oxygen: {}", oxygen_clone.len());
+        //println!("Length of CO2: {}", co2_clone.len());
         let (o_most, o_least) = get_common_bits_in_positon(&oxygen_clone, i);
         oxygen_clone = oxygen_clone
                         .into_iter()
@@ -59,9 +59,9 @@ pub fn calc_life_support_rating(diagnostics: &mut Vec<String>) -> u32 {
     }
     i = 0;
     while i < diagnostics[0].chars().count() && co2_clone.len() > 1 {
-        println!("Value of I: {}", i);
-        println!("Length of Oxygen: {}", oxygen_clone.len());
-        println!("Length of CO2: {}", co2_clone.len());
+        //println!("Value of I: {}", i);
+        //println!("Length of Oxygen: {}", oxygen_clone.len());
+        //println!("Length of CO2: {}", co2_clone.len());
 
         let (c_most, c_least) = get_common_bits_in_positon(&co2_clone, i);
         co2_clone = co2_clone
@@ -71,8 +71,8 @@ pub fn calc_life_support_rating(diagnostics: &mut Vec<String>) -> u32 {
         i = i + 1;
     }
 
-    println!("Final length of Oxygen: {}", oxygen_clone.len());
-    println!("Final length of CO2: {}", co2_clone.len());
+    //println!("Final length of Oxygen: {}", oxygen_clone.len());
+    //println!("Final length of CO2: {}", co2_clone.len());
 
     let oxygen = u32::from_str_radix(&oxygen_clone[0], 2).unwrap();
     let co2 = u32::from_str_radix(&co2_clone[0], 2).unwrap();
